@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando tipos de Dados</title>
+</head>
+<body>
+   
+    <h1> Imprimindo tipos de dados (Tipo data) </h1>
+    
+    <script>
+
+        /* JavaScript têm muita precisão e 
+        podem se aproximar bastante de 0.1
+        */
+var then = new Date(2021, 1, 8); // O 8º dia do 1º mês de 2021
+var later = new Date(2021, 1, 8, // O mesmo dia, às 5:10:30 da tarde, hora local
+ 17, 10, 30);
+var now = new Date(); // A data e hora atuais
+var elapsed = now - then; // Subtração de data: intervalo em milissegundos
+document.write (later.getFullYear() )// => 2021
+document.write("<br>");
+document.write (later.getMonth()) // => 1: meses com base em um
+document.write("<br>");
+document.write (later.getDate() )// => 8: dias com base em oito
+document.write("<br>");
+document.write (later.getDay()) // => 5: dia da semana. 0 é domingo, 5 é sexta-feira.
+document.write("<br>");
+document.write (later.getHours() )// => 17: 5 da tarde, hora local
+document.write("<br>");
+document.write (later.getUTCHours()) // Horas em UTC; depende do fuso horário
+document.write("<br>");
+document.write (later.toString() )// => "Sexta-feira, 01 de janeiro de 2010, 17:10:30 GMT-0800
+document.write("<br>");
+document.write (later.toUTCString()) // => "Sábado, 02 de janeiro de 2010, 01:10:30 GMT"
+document.write("<br>");
+document.write (later.toLocaleDateString() )// => "01/01/2010"
+document.write("<br>");
+document.write (later.toLocaleTimeString()) // => "05:10:30 PM"
+document.write("<br>");
+document.write (later.toISOString()) // => "2010-01-02T01:10:30.000Z"; somente ES
+
+
+
+    </script>
+ 
+</body>
+</html>
+

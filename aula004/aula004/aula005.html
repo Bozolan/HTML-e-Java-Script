@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando tipos de Dados</title>
+</head>
+<body>
+   
+    <h1> Imprimindo tipos de dados (Tipo Texto) </h1>
+    
+    <script>
+
+        /* JavaScript têm muita precisão e 
+        podem se aproximar bastante de 0.1
+        */
+var p = "π"; // π é 1 caractere com posição de código de 16 bits 0x03c0
+var e = "e"; // e é 1 caractere com posição de código de 17 bits 0x1d452
+var nome ="Sandra Bozolan"
+
+document.write (p.length )// => 1: p consiste em 1 elemento de 16 bits
+document.write("<br>");
+document.write (e.length) // => 2: a codificação UTF-16 de e são 2 valores de 16 bits: 
+document.write("<br>");
+document.write (nome.length) // => 3: a codificação UTF-16 de e são 14 valores de 16 bits: 
+document.write("<br>");
+document.write (nome) // => 3: a codificação UTF-16 de e são 14 valores de 16 bits: 
+document.write("<br>");
+
+var s = "hello, world" // Começa com um texto.
+document.write (s.charAt(0)) // => "h": o primeiro caractere.
+document.write("<br>");
+document.write (s.charAt(s.length-1)) // => "d": o último caractere.
+document.write("<br>");
+document.write (s.substring(1,4)) // => "ell": o 2º, 3º e 4º caracteres.
+document.write("<br>");
+document.write (s.slice(1,4)) // => "ell": a mesma coisa
+document.write("<br>");
+document.write (s.slice(-3)) // => "rld": os últimos 3 caracteres
+document.write("<br>");
+document.write (s.indexOf("l")) // => 2: posição da primeira letra l.
+document.write("<br>");
+document.write (s.lastIndexOf("l") )// => 10: posição da última letra l.
+document.write("<br>");
+document.write (s.indexOf("l", 3)) // => 3: posição do primeiro "l" em ou após 3
+document.write("<br>");
+document.write (s.split(", ")) // => ["hello", "world"] divide em substrings
+document.write("<br>");
+document.write (s.replace("h", "H") )// => "Hello, world": substitui todas as instâncias
+document.write("<br>");
+document.write (s.toUpperCase()) // => "HELLO, WORLD"
+    </script>
+ 
+</body>
+</html>
+
