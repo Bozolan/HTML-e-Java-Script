@@ -1,0 +1,53 @@
+span {
+    color:  rgb(0, 92, 128);
+    font-weight: bold;
+}
+input {
+    background-color: #FFF
+}
+
+button
+{
+
+color: #FFF;
+background-color: rgb(0, 92, 128);
+border-radius: 20px;
+border: none;
+height: 40px;
+line-height: 30px;
+padding: 0 10px;
+text-transform: uppercase;
+font-weight: bold;
+cursor: pointer;
+}
+
+body
+{
+background:  rgb(0, 92, 128);
+font: normal 15pt Arial;
+}
+
+header 
+{
+color: rgba(241, 146, 82, 0.753);
+text-align: center;
+
+}
+
+section
+{
+background:  rgba(241, 146, 82, 0.753);
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px black;
+}
+
+footer
+{
+
+    color:  rgba(241, 146, 82, 0.753);
+    text-align: center;
+    font-style: italic;
+}

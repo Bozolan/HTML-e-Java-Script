@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Agenda 2021</title>
+
+       <link rel="stylesheet" href="css/estilo.css">
+    
+</head>
+
+<body>
+
+      <header> 
+        
+        <h1 > Mini Agenda Pessoal</h1>
+    </header>
+    <section>
+        <!--h2 >Mini Agenda Pessoal</h2-->
+        <hr>
+        <div id="parte1">
+        <input type="text" id="txtNome" placeholder="Digite seu nome" size="30"/>
+        <br>
+        <input type="number" id="txtDate" placeholder="Digite o ano do nascimento"  />
+        <br>
+        </div>
+        <div id="parte2">
+        <input type="text" id="txtEmail" placeholder="Digite seu email" size="30"/>
+        <br>
+        <input type="text" id="txtPhone" class="form-control" placeholder="Ex:(11)00000-0000" data-mask="(11)00000-0000" maxlength="20" autocomplete="on">
+        <br>
+        <br>
+    </div>
+    
+        <button type="button" id="mostrar" >Mostrar</button>
+        <button type="button" id="relatorio">Gerar relatório</button>
+          </div>
+        <hr>
+
+        <p>
+            Nome: <span id="nome"></span>
+            <br/>
+            Data Nasc: <span id="ano"></span>
+            <br/>
+            Email: <span id="email"></span>
+            <br/>
+            Celular: <span id="cel"></span>
+            <br/>
+           
+        </p>
+        <hr>
+        <ol id="listaNumerada"></ol>
+    </body>
+    <script src="js/funcoes.js"></script>
+    <script src="js/controller.js"></script>
+    </section>
+    <footer>
+<p>&copy; Bozolan´s - Curso HTML</p>
+
+    </footer>
+      <!--Adicionando Java Script - com uso do CSS-->
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
